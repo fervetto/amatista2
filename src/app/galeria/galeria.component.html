@@ -1,0 +1,23 @@
+<div class="galeria">
+<div *ngFor="let articulo of articulos"  >
+      <div *ngIf="tipoJoya">
+        <div *ngIf="tipoJoya.id === articulo.tipo; then thenBlock"></div>
+        <ng-template #thenBlock  >
+          <div class="galeryElement">
+            <img src= "{{articulo.link}}">
+            <P>{{articulo.detail}}</P>
+            <p> {{articulo.link}}</p>
+          </div>
+        </ng-template>
+  </div>
+</div>
+<!--
+<div *ngFor="let galeryElement of galery">
+  <div *ngIf="galeryElement.tipo === clickHeaderTipo; then thenBlock"></div>
+    <ng-template #thenBlock [galeryElement] = "galeryElement">
+      <app-galery-element class="galery"
+        [galeryElement] = "galeryElement">
+      </app-galery-element>
+    </ng-template>
+  </div>
+-->

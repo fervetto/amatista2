@@ -1,0 +1,10 @@
+<h2>Amatista Joyas</h2>
+<ul class="nav">
+  <li *ngFor="let tipoJoya of tipo_joyas"
+    [class.selected]="tipoJoya === selectedTipoJoya"
+    (click)="onSelect(tipoJoya)">
+    <span class="badge">{{tipoJoya.name}}</span>
+  </li>
+</ul>
+
+<app-galeria [tipoJoya]="selectedTipoJoya"></app-galeria>
