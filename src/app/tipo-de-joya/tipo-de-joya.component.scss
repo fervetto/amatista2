@@ -1,16 +1,16 @@
-
-.galeria{
-  width:100%;
+h2{
+  left:20px;
+}
+.header {
+  text-align: left;
+  display: flex;
   align-items: center;
+  flex: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #d607e9;
+  color: white;
 }
-
-.galeria p{
-  text-align: justify;
-  padding: 15px;
-  border:5px;
-  border-color:rgba(33, 0, 219, 0.856)
-}
-
 .nav {
   margin: 0 0 2em 0;
   list-style-type: none;
@@ -21,40 +21,43 @@
   align-items:center;
   flex-wrap:wrap;
 }
-.nav li {
+.nav li span{
   cursor: pointer;
   position: relative;
-  left: 0;
-  background-color: #EEE;
+  /*left: 0;*/
+  background-color: rgb(255, 0, 234);
   margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
-  border-radius: 4px;
+  /*padding: .3em 0;*/
+  width: 5em;
+  height: 3.6em;
+  border-radius: 40% 0% 40% 0%;
+  border: 3px solid rgb(0, 0, 0);
 }
-.nav li:hover {
-  color: #607D8B;
-  background-color: #DDD;
+.nav li span:hover {
+  color: #ff00dd;
+  background-color: rgb(255, 255, 255);
   left: .1em;
 }
-.selected {
-  background-color: #CFD8DC;
+.nav li .selected {
+  background-color: #000000;
   color: white;
 }
-.selected:hover {
+.nav li .selected:hover {
   background-color: #ffffff;
   color: rgb(255, 0, 255);
 }
 .nav .badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
+  align-items:center;
+  display: flex;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  /*padding: 0.8em 0.7em 0 0.7em;
   background-color:#d607e9;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
+  /*line-height: 1em;
+  /*position: relative;*/
+  /*left: -1px;
   top: -4px;
   height: 1.8em;
-  margin-right: .8em;
+  margin-right: .8em;*/
   border-radius: 4px 0 0 4px;
 }
