@@ -1,7 +1,7 @@
 import { Articulo } from "./Articulo"
 
 export const ARTICULOS: Articulo[] = [
-  {id: 1, tipo: 2, detail: 'Anillo', link: 'assets/anillos/anillo01.jpg'},
+  {id: 1, tipo: 2, detail: 'Anillo', link: 'assets/anillos/anillo06.jpg'},
   {id: 2, tipo: 1, detail: 'Aros', link: '/assets/aros/aro02.jpg'},
   {id: 3, tipo: 1, detail: 'Aros', link: '/assets/aros/aro03.jpg'},
   {id: 4, tipo: 1, detail: 'Aros', link: '/assets/aros/aro04.jpg'},

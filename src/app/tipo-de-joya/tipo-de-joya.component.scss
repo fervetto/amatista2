@@ -1,7 +1,14 @@
-h2{
-  left:20px;
+.logo{
+  display:flex;
+  flex: 20%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+
 }
+
 .header {
+  border:5px double black;
   text-align: left;
   display: flex;
   align-items: center;
@@ -10,16 +17,18 @@ h2{
   flex-wrap: wrap;
   background-color: #d607e9;
   color: white;
+  border-radius:0% 0% 20% 20%;
 }
 .nav {
-  margin: 0 0 2em 0;
+  flex:80%;
+  margin: 0 0 0 0;
   list-style-type: none;
   padding: 0;
-  /*width: 15em;*/
   display: flex;
   flex-direction:row;
   align-items:center;
   flex-wrap:wrap;
+  justify-content: center;
 }
 .nav li span{
   cursor: pointer;
