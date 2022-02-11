@@ -11,7 +11,11 @@ import { TIPO_JOYAS } from '../mock-tipoJoyas';
 export class TipoDeJoyaComponent implements OnInit {
 
   tipo_joyas=TIPO_JOYAS;
-  selectedTipoJoya: TipoJoya | undefined;
+  selectedTipoJoya: TipoJoya =  {
+    id: 0,
+    name: "portada",
+  }
+ ;
 
   constructor() { }
 
@@ -20,6 +24,10 @@ export class TipoDeJoyaComponent implements OnInit {
 
   onSelect(tipoJoya: TipoJoya): void {
     this.selectedTipoJoya = tipoJoya;
+    console.log(this.selectedTipoJoya)
+    console.log(tipoJoya)
   }
+
+  refresh(): void { window.location.reload(); }
 
 }

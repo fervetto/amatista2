@@ -10,7 +10,11 @@ import { ARTICULOS } from '../mock-articulos';
   styleUrls: ['./galeria.component.scss']
 })
 export class GaleriaComponent implements OnInit {
-  @Input() tipoJoya: TipoJoya | undefined;
+  @Input() tipoJoya: TipoJoya =  {
+    id: 0,
+    name: "portada",
+  }
+ ;
 
   articulos=ARTICULOS;
   selectedArticulo:Articulo | undefined;

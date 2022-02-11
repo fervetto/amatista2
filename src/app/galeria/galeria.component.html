@@ -1,19 +1,22 @@
-<div class="galeria">
-  <div *ngFor="let articulo of articulos"  >
-    <div *ngIf="tipoJoya">
-      <div *ngIf="tipoJoya.id === articulo.tipo; then thenBlock"></div>
-    </div>
-
-    <ng-template #thenBlock  >
-      <div class="galeryElement">
-        <img src= "{{articulo.link}}">
-        <P>{{articulo.detail}}</P>
-        <p> {{articulo.link}}</p>
-      </div>
-    </ng-template>
-
-  </div>
+<div *ngIf="tipoJoya.id===0">
+  <app-portada></app-portada>
 </div>
+  <div class="galeria">
+      <div *ngFor="let articulo of articulos"  >
+        <div *ngIf="tipoJoya">
+          <div *ngIf="tipoJoya.id === articulo.tipo; then thenBlock"></div>
+        </div>
+
+        <ng-template #thenBlock  >
+          <div class="galeryElement">
+            <img src= "{{articulo.link}}">
+            <P> <b>Materiales:</b> {{articulo.materiales}}.</P>
+            <p> <b>Precio: $</b>{{articulo.precio}}</p>
+          </div>
+        </ng-template>
+
+      </div>
+    </div>
 <!--
 <div *ngFor="let galeryElement of galery">
   <div *ngIf="galeryElement.tipo === clickHeaderTipo; then thenBlock"></div>

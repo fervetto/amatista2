@@ -2,6 +2,8 @@ export interface Articulo
  {
    id?: number;
    tipo: number;
-   detail: string;
+   precio: number;
+   disponible: boolean;
+   materiales: string;
    link: string;
  }
