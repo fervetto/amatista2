@@ -1,6 +1,21 @@
+.portada{
+  display:flex;
+  flex: 80%;
+  flex-wrap:wrap;
+
+}
+
+
 img{
-  width: 100%;
+  max-width: 100%;
   border: 5px solid black;
   justify-content: center;
   margin: 15px;
 }
+.imagen{
+  display:flex;
+  flex-wrap:wrap;
+  flex:100%;
+  overflow: scroll;
+}
+
