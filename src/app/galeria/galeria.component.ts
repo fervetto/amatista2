@@ -18,6 +18,7 @@ export class GaleriaComponent implements OnInit {
 
   articulos=ARTICULOS;
   selectedArticulo:Articulo | undefined;
+  utilidad=84;
 
 
   constructor() { }

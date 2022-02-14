@@ -2,13 +2,13 @@ import { Articulo } from "./Articulo"
 
 export const ARTICULOS: Articulo[] = [
 //Aros
-  {id: 100, tipo: 1, precio: 0, disponible: true, materiales: 'Aros', link: '/assets/aros/aro02.jpg'},
-  {id: 101, tipo: 1, precio: 0, disponible: true, materiales: 'Aros', link: '/assets/aros/aro03.jpg'},
-  {id: 102, tipo: 1, precio: 0, disponible: true, materiales: 'Aros', link: '/assets/aros/aro04.jpg'},
+  {id: 100, tipo: 1, precio: 22, disponible: true, materiales: 'Aros', link: '/assets/aros/aro02.jpg'},
+  {id: 101, tipo: 1, precio: 12, disponible: true, materiales: 'Aros', link: '/assets/aros/aro03.jpg'},
+  {id: 102, tipo: 1, precio: 15, disponible: true, materiales: 'Aros', link: '/assets/aros/aro04.jpg'},
 //Anillos
-  {id: 201, tipo: 2, precio: 0, disponible: true, materiales: 'Plata', link: 'assets/anillos/anillo06.jpg'},
-  {id: 202, tipo: 2, precio: 0, disponible: true, materiales: 'Plata', link: '/assets/anillos/anillo01.jpg'},
-  {id: 203, tipo: 2, precio: 0, disponible: true, materiales: 'Plata', link: '/assets/anillos/anillo02.jpg'},
+  {id: 201, tipo: 2, precio: 30, disponible: true, materiales: 'Plata', link: 'assets/anillos/anillo06.jpg'},
+  {id: 202, tipo: 2, precio: 15, disponible: true, materiales: 'Plata', link: '/assets/anillos/anillo01.jpg'},
+  {id: 203, tipo: 2, precio: 13, disponible: true, materiales: 'Plata', link: '/assets/anillos/anillo02.jpg'},
   {id: 204, tipo: 2, precio: 0, disponible: true, materiales: 'Plata', link: '/assets/anillos/anillo03.jpg'},
   {id: 205, tipo: 2, precio: 0, disponible: true, materiales: 'Plata', link: '/assets/anillos/anillo04.jpg'},
   {id: 206, tipo: 2, precio: 0, disponible: true, materiales: 'Plata', link: '/assets/anillos/anillo05.jpg'},

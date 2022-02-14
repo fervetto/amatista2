@@ -3,15 +3,23 @@ h2{
   text-decoration: underline;
   text-align:center;
 }
-a{
+div a{
   text-decoration: none;
   color: white;
   margin-left:15px;
-  padding:5px;
+  padding:15px;
+
 }
 
-a:hover{
+div a:hover{
   text-decoration:underline;
   color: black;
 
 }
+
+
+
+img{
+  margin-bottom:20px;
+}
+
