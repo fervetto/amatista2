@@ -9,7 +9,8 @@
 
         <ng-template #thenBlock  >
           <div class="galeryElement">
-            <img src= "{{articulo.link}}">
+            <a target="_blank" href="https://wa.me/+5493624309549/?text=Me%20interesa%20este%20producto:%20{{articulo.link}}">
+            <img src= "{{articulo.link}}"></a>
             <P> <b>Materiales:</b> {{articulo.materiales}}.</P>
             <p> <b>Precio: $</b>{{utilidad * articulo.precio}}</p>
           </div>

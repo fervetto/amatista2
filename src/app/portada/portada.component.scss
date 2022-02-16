@@ -2,15 +2,20 @@
   display:flex;
   flex: 80%;
   flex-wrap:wrap;
+  align-items: left;
 
 }
 
+h2{
+  text-align:center;
+}
 
 img{
   max-width: 100%;
   border: 5px solid black;
   justify-content: center;
   margin: 15px;
+  align-self: stretch;
 }
 .imagen{
   display:flex;
@@ -19,3 +24,14 @@ img{
   overflow:hidden;
 }
 
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:large;
+  padding-left: 15px;
+}
+
+p img{
+  vertical-align: middle;
+  border:0;
+  margin:0;
+}

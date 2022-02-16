@@ -77,14 +77,21 @@
   position:relative;
   height:fit-content;
   z-index: inherit;
+  /*background-color: transparent;
+  background-image: url("/assets/background.png");
+  background-repeat: no-repeat;
+  background-size:cover;*/
 }
 
 .olas{
-  position:absolute;
+  position:fixed;
   bottom: 0;
   z-index:-100;
+}.olasUP{
+  position:fixed;
+  top: -50;
+  z-index:-100;
 }
-
 
 .main
 {
@@ -101,7 +108,7 @@
   flex: 20%;
   flex-wrap:wrap;
   flex-direction:column;
-  background-color: rgba(101, 68, 190, 0.452);
+  background-color: rgba(101, 68, 190, 0.795);
   width:fit-content;
 }
 
@@ -128,6 +135,10 @@
     top:0;
 
   }
+  .olasUP{
+    display:none;
+  }
+
 
 }
 @media only screen and (min-width: 1400px) {
@@ -148,5 +159,6 @@
     width: 80%;
     margin-left:20%;
   }
+
 
 }
